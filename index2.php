@@ -462,33 +462,363 @@ Expected Output: 'fox' -->
 
   ?>
 
-<?php 
+  <?php
 
-// reverse a string  
-
-
-// function reverseString($str){
-
-//   $length = strlen($str);
-//   $reversedString = "";
-
-//   for($m = $length - 1; $m >= 0; $m--){
-
-//     $reversedString .= $str[$m];
-//   }
- 
-//   return $reversedString;
-// }
-
-// echo reverseString("moon");
-
-?>
+  // reverse a string  
 
 
+  // function reverseString($str){
+
+  //   $length = strlen($str);
+  //   $reversedString = "";
+
+  //   for($m = $length - 1; $m >= 0; $m--){
+
+  //     $reversedString .= $str[$m];
+  //   }
+
+  //   return $reversedString;
+  // }
+
+  // echo reverseString("moon");
+
+  ?>
 
 
 
 
+  <!-------------- write a php script that insert spcicfies new item in an array in any position --------------->
+
+
+  <?php
+
+  // $array = [1,2,3,4,5];
+  // // $new = "$" ;
+  // $position = 2 ;
+
+  // function addItem($arr, $new, $pos){
+
+  //   $firstSection = array_slice($arr, 0, $pos);
+  //   $secondSection = array_slice($arr, $pos);
+
+  //   $result = array_merge($firstSection, array($new), $secondSection);
+
+  //   print_r($result);
+  //   return ;
+
+  // }
+
+  // echo addItem($array,"$", $position);
+
+
+
+
+
+  // write a php script to sort the folowing associative array depending on the key value[asc]:
+
+  $fruits = array("d" => "lemon", "a" => "orange", "b" => "banana", "c" => "apple");
+
+  // expected output :
+
+  // apple 
+  // banana 
+  // lemon 
+  // orange 
+
+
+  // sort($fruits);
+
+  // foreach($fruits as $fruit) {
+
+  //   echo $fruit . "<br>";
+
+  // }
+
+
+
+  // write a php script to claculate and desplay the average temperature -----------------------------------------------------
+  // of the recorded reads, asso the script should display the list of 
+  // the five lowest and the five highest temperatures
+
+
+  // $numbers = [78, 60, 62, 68, 71, 68, 73, 85, 66, 64, 76, 80, 75, 76, 68, 62, 73, 72, 
+  //             65, 74, 70, 62, 65, 67, 68, 73, 75, 79, 73];
+
+
+  // function tempreture($numArr)
+  // {
+  //   sort($numArr);
+
+  //   $sum = 0;
+  //   $lowest = "";
+  //   $highest = "";
+
+  //   // calculate the average of the tempretures 
+  //   for ($o = 0; $o <= count($numArr); $o++) {
+  //     $sum = $sum + $numArr[$o];
+  //   }
+  //   echo "Average tempreture : " . number_format($sum / count($numArr), 1) . "<br>";
+
+  //   // echo the first five lowst tempretures with no iterations 
+  //   for ($i = 0; $i <= count($numArr); $i++) {
+  //     if (!str_contains($lowest, $numArr[$i])) {
+  //       $lowest .= $numArr[$i] . ",";
+  //     }
+
+  //     if (strlen($lowest) >= 15) {
+  //       break;
+  //     }
+  //   }
+  //   echo "List of five lowes temperatures : " . $lowest . "<br>";
+
+  //   // echo the last highest temperatures with no iterations 
+  //   for ($b = count($numArr) - 1; $b >= 0; $b--) {
+
+  //     if (strlen($highest) >= 15){
+  //       break;
+  //     } 
+  //       $highest .= $numArr[$b] . ",";
+  //     }
+  //     echo "List of five highest temperature :  ". $highest;
+  // }
+
+  // tempreture($numbers);
+
+
+
+
+  // write a php program to mege the floowing two arrays.--------------------------------------------------------------------- 
+
+  // $array1 = array("color" => "red", 2, 4);
+  // $array2 = array("a", "b", "color" => "green", "shape" => "trapezoid", 4);
+
+  // $result = array_merge($array1, $array2);
+
+  // print_r($result). "<br>";
+
+  // try to solve it without using built-in function merge !!
+  // $tst = [];
+
+  // for($i = 0; $i <= count($array1); $i++){
+  //   array_push($tst, $array1[$i]);
+  // }
+
+  // for($e = 0; $e <= count($array2); $e++){
+  //   array_push($tst, $array2[$e]);
+  // }
+
+  // print_r($tst);
+
+
+  // wirte a php function to change the following array's and conver all the string to upper case------------------------------------ 
+
+  // $colors = array("red", "blue", "white" ,"yellow");
+
+  // function convertUpper($arr)
+  // {
+  //   $upperArray = [];
+  //   for ($p = 0; $p <= count($arr); $p++) {
+
+  //     $upperArray .= "<br>";
+  //     $upperArray .= strtoupper($arr[$p]);
+  //   }
+  //   print_r($upperArray);
+  // }
+
+  // convertUpper($colors);
+
+
+  // ------------------------------------------------------ lower case convert
+  // $colors2 = array("RED", "BLUE", "WHITE" ,"YELLOW");
+
+  // function convertlower($arr)
+  // {
+  //   $upperArray = [];
+  //   for ($p = 0; $p <= count($arr); $p++) {
+
+  //     $upperArray .= "<br>";
+  //     $upperArray .= strtolower($arr[$p]);
+  //   }
+  //   print_r($upperArray);
+  // }
+
+  // convertlower($colors2);
+
+
+
+  // write a php script which desplays all the numbes between 200 and 250---------------------------------------------------
+  // that are divisible by 4 ;
+
+
+  // for($r = 200; $r <= 250; $r++){
+
+  //   if($r % 4 == 0){
+  //     echo $r . " ";
+  //   }
+  // }
+
+
+
+  // write a php scripte to get the shorest/longest string length from an array.
+
+  // $words = ["malek", "mohammed", "ali", "omar"];
+  // $longest = "";
+  // $shortest = $words[0];
+
+  // for ($t = 0; $t < count($words); $t++) {
+  //   if (strlen($words[$t]) > strlen($longest)) {
+  //     $longest = $words[$t];
+  //   }
+  // }
+
+
+  // for ($w = 0; $w < count($words); $w++) {
+  //   if (strlen($words[$w]) < strlen($shortest)) {
+  //     $shortest = $words[$w];
+  //   }
+  // }
+  // echo "The Longest word inside this array is : ". $longest . "<br>";
+  // echo "The Shortest word inside this array is : " .$shortest . "<br>";
+
+
+
+
+  // write a php script that returns the lowest integer in the array that is not 0  ----------------------------------------------------
+
+  // $nums = [9, 8, 7, 10, 0];
+
+  // $lowestInt = $nums[0];
+
+  // for($i = 0; $i < count($nums); $i++){
+  //   if($nums[$i] < $lowestInt && $nums[$i] != 0){
+  //     $lowestInt = $nums[$i];
+  //   }
+  // }
+  // echo "This is the lowest integer ".$lowestInt ;
+
+
+
+
+  // write a php scirpt to generate unique random 10 numbers within a specific range ---------------------------------------------------
+
+
+  // $start = 11 ;
+  // $end = 20 ;
+  // $emptyString = "";
+
+  // for($m = 1; $m <= 200; $m++){
+  //   $newNum =rand($start, $end);
+
+  //   if(!(str_contains($emptyString, $newNum ))){
+  //     $emptyString .= $newNum ;
+  //     // $emptyString .= ",";
+      
+  //   }
+  //   if(strlen($emptyString) >= 60){
+  //     break ;
+  //   }
+  // }
+
+  // echo $emptyString
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  ?>
 
 
 
